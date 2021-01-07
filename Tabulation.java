@@ -19,7 +19,7 @@ public class Tabulation
 			factArr[i] = factArr[i -1] * i;
 		}
 		
-		// optional to display the result
+		// optional to display the results
 		for(int x = 0; x < factArr.length; ++x)
 			System.out.println("Factorial of " + x + " is " + factArr[x]);
 		
