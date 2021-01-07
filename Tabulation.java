@@ -11,13 +11,14 @@ public class Tabulation
 	// run time is O(n) 
 	public static void fact(int n)
 	{
-		int [] factArr = new int[n+1];
+		int [] factArr = new int[n+1]; // array to store the results
 		factArr[0] = 1; // base case;
 		
 		for(int i = 1; i <= n; ++i)
 		{
 			factArr[i] = factArr[i -1] * i;
 		}
+		
 		// optional to display the result
 		for(int x = 0; x < factArr.length; ++x)
 			System.out.println("Factorial of " + x + " is " + factArr[x]);
@@ -25,12 +26,11 @@ public class Tabulation
 	}
 	
 	// Using tabulation to find the fibonacci sequence 
-    // of a given number.
-    // run time is O(n) 
+        // of a given number.
+        // run time is O(n) 
 	public static void fibo(int n)
 	{
-		System.out.println("=========================================");
-		int [] fiboArr = new int [n +1];
+		int [] fiboArr = new int [n +1]; // array to store the results
 		
 		fiboArr[0] = 0;   // base case
 		fiboArr[1] = 1;   // base case
